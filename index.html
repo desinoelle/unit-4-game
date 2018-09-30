@@ -1,0 +1,75 @@
+<!--Crystal Collector Game!-->
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <title>Crystal Collector Game</title>
+
+        <!-- Added link to the jQuery Library -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+        <!--Link styles-->
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/reset.css">
+
+        <!--Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+        
+    </head>
+
+    <body>
+
+        <!--Header-->
+        <div class="header">
+            <h1>Welcome to the Crystal Collector</h1>
+        </div>
+
+        <!--Rules-->
+        <div class="rules">
+            <h2 id="h2rules">Rules:</h2>
+            <ul>
+                <li>You will be given a random number at the start of the game.</li>
+                <li>There are four crystals below. By clicking on a crystal, you will add a specific amount of points to your total score.</li>
+                <li>You win the game by matching your total score to the given random number. You lose the game if your total score goes above the random number.</li>
+                <li>The value of each crystal is hidden from you until you click on it.</li>
+            </ul>
+        </div>
+
+        <!--These elements are in the same row-->
+        <div class="row">
+            <!--Where the random number goes (empty until the game starts)-->
+            <div id="random-num"></div>
+
+            <!--Displays wins and losses-->
+            <div class="wins-and-losses">
+                <h2>Wins: </h2>
+                <div id="wins"></div>
+                <h2>Losses: </h2>
+                <div id="losses"></div>
+            </div>
+        </div>
+
+        <!--Crystal buttons-->
+        <div class="crystals">
+            <img class="crystal" id="crystal1" src="assets/images/crystal1.jpg"/>
+            <img class="crystal" id="crystal2" src="assets/images/crystal2.jpg"/>
+            <img class="crystal" id="crystal3" src="assets/images/crystal3.jpg"/>
+            <img class="crystal" id="crystal4" src="assets/images/crystal4.jpg"/>
+        </div>
+
+        <!--Player score-->
+        <div class="score">
+            <h3 id="h3score">Your total score is:</h3>
+            <div id="score-total"></div>
+            <!--Reset button-->
+            <button id="reset">Reset Game</button>
+        </div>
+
+        <!--Displays a message-->
+        <div id="message">...</div>
+     
+        <!--Javascript-->
+        <script type="text/javascript" src="assets/javascript/game.js"></script>
+
+    </body>
+</html>
